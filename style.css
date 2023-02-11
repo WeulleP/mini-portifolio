@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor-de-fundo: #000000;
+    --azul-primario:#22D4FD;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo);
+    color: #FFFFFF;
+}
+
+.destaque__titulo {
+    color: var(--azul-primario);
+}
+
+.apresentacao{
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentacao__conteudo__texto{
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__link{
+    display: flex;
+    justify-content: space-between;
+}
+
+.apresentacao__link__link{
+    background-color: var(--azul-primario);
+    width: 14rem;
+    text-align: center;
+    border-radius: 16px;
+    font-size: 1.5rem;
+    padding: 1.31rem 0;
+    margin: 0 1rem;
+    text-decoration: none;
+    color: var(--cor-de-fundo);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.foto__perfil{
+    border-radius: 16px;
+    box-shadow: 10px -10px 10px var(--azul-primario);
+    width: 30%;
+}
+
+@media (max-width: 860px){
+    .apresentacao{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo{
+        text-align: center;
+        width: 90%;
+    }
+
+    .foto__perfil{
+        width: 35%;
+        height: 35%;
+    }
+}
+
+@media (max-width: 450px){
+
+    .apresentacao__conteudo{
+        justify-content: center;
+    }
+
+    .apresentacao__conteudo__titulo{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .apresentacao__conteudo__texto{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .apresentacao__link{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .apresentacao__link__link{
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+
+}
